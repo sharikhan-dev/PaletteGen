@@ -1,0 +1,356 @@
+/* =========================
+   Google Font
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#111827;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#fff;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#374151;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+.close-page-btn{
+
+    position: absolute;
+
+    top: 95px;
+    left: 8%;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+
+    color: #111827;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition: .3s;
+}
+
+.close-page-btn:hover{
+
+    transform: scale(1.08);
+
+    background: #ef4444;
+    color: white;
+}
+
+
+
+
+
+/* =========================
+   Hero
+========================= */
+
+.report-hero{
+    text-align:center;
+    padding:70px 20px 50px;
+}
+
+.report-hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.report-hero p{
+    max-width:700px;
+    margin:auto;
+
+    color:#6b7280;
+    line-height:1.7;
+}
+
+/* =========================
+   Main Layout
+========================= */
+
+.report-container{
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+
+    padding-bottom:80px;
+}
+
+/* =========================
+   Form Card
+========================= */
+
+.report-form{
+    background:#fff;
+    padding:35px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+}
+
+.report-form h2{
+    margin-bottom:25px;
+}
+
+/* =========================
+   Inputs
+========================= */
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:18px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    padding:14px 16px;
+
+    border:1px solid #d1d5db;
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#2563eb;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.action-buttons{
+    display:flex;
+    gap:15px;
+
+    margin-top:10px;
+}
+
+.email-btn,
+.telegram-btn{
+
+    flex:1;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.email-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.telegram-btn{
+    background:#111827;
+    color:white;
+}
+
+.email-btn:hover,
+.telegram-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   Developer Card
+========================= */
+
+.developer-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    height:fit-content;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.profile-icon{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.profile p{
+    color:#6b7280;
+    margin-top:10px;
+}
+
+.info-box{
+
+    padding:15px;
+
+    background:#f9fafb;
+
+    border-radius:12px;
+
+    margin-bottom:12px;
+}
+
+.info-box h3{
+    margin-bottom:6px;
+    font-size:15px;
+}
+
+.info-box p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+.note-box{
+
+    margin-top:20px;
+
+    background:#eff6ff;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    border-left:4px solid #2563eb;
+}
+
+.note-box h3{
+    margin-bottom:8px;
+}
+
+.note-box p{
+    color:#4b5563;
+    line-height:1.6;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:900px){
+
+    .report-container{
+        grid-template-columns:1fr;
+    }
+
+    .developer-card{
+        order:-1;
+    }
+
+    .report-hero h1{
+        font-size:2.2rem;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        padding:18px 5%;
+    }
+
+    .action-buttons{
+        flex-direction:column;
+    }
+
+    .report-form{
+        padding:25px;
+    }
+
+    .developer-card{
+        padding:25px;
+    }
+
+    .report-hero h1{
+        font-size:1.9rem;
+    }
+}

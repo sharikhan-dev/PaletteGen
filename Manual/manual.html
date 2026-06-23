@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaletteGen-Manual-Select-Palette</title>
+</head>
+<link rel="stylesheet" href="manual.css">
+<body>
+
+     <nav class="navbar">
+
+    <div class="logo">
+        Palette<span>Gen</span>
+    </div>
+
+    <ul class="nav-links">
+       <li><a href="../index.html">Home</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="Report/report.html">Report</a></li>
+    </ul>
+
+</nav>
+    
+
+<section id="manual">
+     <div class="back-container">
+
+            <button class="back-btn" onclick="history.back()">
+                ← Back
+            </button>
+
+        </div>
+
+
+        <div class="heading">
+            <h1>Build Your Palette Manually</h1>
+            <p>
+                Choose two colors and generate a beautiful palette.
+            </p>
+        </div>
+
+        <div class="manual-card">
+
+            <!-- Method Select -->
+
+            <div class="method-select">
+
+                <select id="inputMethod">
+
+                    <option value="picker">
+                        Select Colors manually
+                    </option>
+
+                    <option value="hex">
+                        Enter HEX Codes
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- Color Inputs -->
+
+            <div class="color-inputs">
+
+                <div class="color-box">
+
+                    <label>Primary Color</label>
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            id="primaryHex"
+                            placeholder="#2563EB"
+                        >
+
+                        <input
+                            type="color"
+                            id="primaryPicker"
+                            value="#2563EB"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="color-box">
+
+                    <label>Accent Color</label>
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            id="accentHex"
+                            placeholder="#7C3AED"
+                        >
+
+                        <input
+                            type="color"
+                            id="accentPicker"
+                            value="#7C3AED"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Generate Button -->
+
+            <button id="manualGenerateBtn">
+                Generate Palette
+            </button>
+
+            <!-- Palette Result -->
+
+            <div class="palette-preview">
+
+                <div class="palette-color">
+                    <span>#000000</span>
+                </div>
+
+                <div class="palette-color">
+                    <span>#000000</span>
+                </div>
+
+                <div class="palette-color">
+                    <span>#000000</span>
+                </div>
+
+                <div class="palette-color">
+                    <span>#000000</span>
+                </div>
+
+                <div class="palette-color">
+                    <span>#000000</span>
+                </div>
+
+                <div class="palette-color">
+                    <span>#000000</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="report-card">
+
+    <div class="report-icon">
+        🛠️
+    </div>
+
+    <h2>Need Help?</h2>
+
+    <p>
+        Found a bug, issue, or have a suggestion?
+        Let us know and help improve PaletteGen.
+    </p>
+
+    <a href="../Report/report.html" class="report-btn">
+        Report Issue
+    </a>
+
+</section>
+<div id="welcomeCard" class="flash-card">
+
+    <button class="close-btn" onclick="closeCard()">
+        ✕
+    </button>
+
+    <div class="card-icon">📖</div>
+
+    <h2>Hello !</h2>
+
+    <p>
+        Learn how to use all tools step-by-step.
+        Follow the guide to discover features,
+        shortcuts, and best practices.
+    </p>
+
+    <button class="start-btn" onclick="closeCard()">
+        Let's Start →
+    </button>
+
+</div>
+
+<div id="overlay"></div>
+
+</body>
+<script src="manual.js"></script>
+</html>

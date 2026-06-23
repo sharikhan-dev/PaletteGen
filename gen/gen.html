@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaletteGen-Generative-Palette</title>
+
+    <link rel="stylesheet" href="gen.css">
+</head>
+
+<body>
+
+
+     <nav class="navbar">
+
+    <div class="logo">
+        Palette<span>Gen</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="Report/report.html">Report</a></li>
+    </ul>
+
+</nav>
+
+    <!-- Main Section -->
+
+    <section id="color">
+
+        <!-- Back Button -->
+
+        <div class="back-container">
+
+            <button class="back-btn" onclick="history.back()">
+                ← Back
+            </button>
+
+        </div>
+
+        <!-- Heading -->
+
+        <div class="heading">
+
+            <h1>
+                Generate Your Perfect Palette
+            </h1>
+
+            <p>
+                Select your preferences and create a professional
+                color palette instantly.
+            </p>
+
+        </div>
+
+        <!-- Generator -->
+
+        <div class="generator-box">
+
+            <div class="controls">
+
+                <select id="industry">
+                    <option selected disabled>Select Industry</option>
+                    <option>SaaS</option>
+                    <option>E-commerce</option>
+                    <option>Finance</option>
+                    <option>Healthcare</option>
+                    <option>Education</option>
+                    <option>Gaming</option>
+                </select>
+
+                <select id="style">
+                    <option selected disabled>Select Style</option>
+                    <option>Modern</option>
+                    <option>Minimal</option>
+                    <option>Luxury</option>
+                    <option>Futuristic</option>
+                    <option>Corporate</option>
+                </select>
+
+                <select id="mood">
+                    <option selected disabled>Select Mood</option>
+                    <option>Professional</option>
+                    <option>Creative</option>
+                    <option>Energetic</option>
+                    <option>Trustworthy</option>
+                    <option>Premium</option>
+                </select>
+
+                <select id="theme">
+                    <option selected disabled>Select Theme</option>
+                    <option>Dark</option>
+                    <option>Light</option>
+                    <option>Gradient</option>
+                    <option>Nature</option>
+                </select>
+
+                <button id="generateBtn">
+                     Generate Palette
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Result Section -->
+
+        <div class="result">
+
+            <div class="palette-header">
+
+                <h3 id="paletteName">
+                    Royal Aurora
+                </h3>
+
+                <p id="paletteInfo">
+                    E-commerce • Modern • Premium
+                </p>
+
+            </div>
+
+            <div class="palette">
+
+                <div class="color-card" id="c1">
+                    <div class="color-preview"></div>
+                    <span>Primary</span>
+                    <p>#8B5CF6</p>
+                </div>
+
+                <div class="color-card" id="c2">
+                    <div class="color-preview"></div>
+                    <span>Secondary</span>
+                    <p>#A78BFA</p>
+                </div>
+
+                <div class="color-card" id="c3">
+                    <div class="color-preview"></div>
+                    <span>Accent</span>
+                    <p>#C4B5FD</p>
+                </div>
+
+                <div class="color-card" id="c4">
+                    <div class="color-preview"></div>
+                    <span>Background</span>
+                    <p>#DDD6FE</p>
+                </div>
+
+                <div class="color-card" id="c5">
+                    <div class="color-preview"></div>
+                    <span>Text</span>
+                    <p>#4C1D95</p>
+                </div>
+
+            </div>
+
+            <div class="palette-actions">
+
+                <button id="copyPalette">
+                    📋 Copy Palette
+                </button>
+
+                <button id="exportCSS">
+                    🎨 Export CSS
+                </button>
+
+                <button id="exportJSON">
+                    📦 Export JSON
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Report Card -->
+
+    <section class="report-card">
+
+        <div class="report-icon">
+            🛠️
+        </div>
+
+        <h2>
+            Need Help?
+        </h2>
+
+        <p>
+            Found a bug, issue, or have a suggestion?
+            Let us know and help improve PaletteGen.
+        </p>
+
+        <a href="../Report/report.html" class="report-btn">
+            Report Issue
+        </a>
+
+    </section>
+    
+    
+<div id="welcomeCard" class="flash-card">
+
+    <button class="close-btn" onclick="closeCard()">
+        ✕
+    </button>
+
+    <div class="card-icon">📖</div>
+
+    <h2>Hello !</h2>
+
+    <p>
+        Learn how to use all tools step-by-step.
+        Follow the guide to discover features,
+        shortcuts, and best practices.
+    </p>
+
+    <button class="start-btn" onclick="closeCard()">
+        Let's Start →
+    </button>
+
+</div>
+
+<div id="overlay"></div>
+
+    
+
+</body>
+<script src="gen.js"></script>
+</html>
