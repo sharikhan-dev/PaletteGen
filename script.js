@@ -142,7 +142,3 @@ document.getElementById("copyPalette")
 
 });
 
-const supabase = window.supabase.createClient(
-  "https://zyhgbivpqqyugtqomrjz.supabase.co", // Project URL
-  "sb_publishable_FZe1OT0nCKo3hfd48eThnQ_gD_VqEzm"        // Publishable (Anon) Key
-);
